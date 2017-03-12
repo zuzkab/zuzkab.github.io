@@ -1,0 +1,89 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1000px;
+
+$on-palm:          600px;
+$on-laptop:        900px;
+
+// Minima also includes a mixin for defining media queries.
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// Import partials from the `minima` theme.
+@import "{{site.theme}}";
+.footer {
+    text-align: center;
+}
+
+.home h1 {
+	color: black;
+    font-family: verdana;
+    font-size: 200%;
+    text-align: center;
+}
+
+.myImage {
+  float: left;
+  height: 375px;
+  width: 235px;
+  padding-bottom: 30px;
+  font-family: Veranda;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    float:right;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.pages {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0 30px;
+	height: 200px;
+	text-align: center;
+}
+
+.pages h2 {
+	font-size: 30px;
+}
+
+.list_img {
+  height: 150px;
+  width: 100px;	
+  padding-bottom: 30px;
+  padding-right: 30px;
+}

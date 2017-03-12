@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <img src= "{{site.baseurl}}/images/{{page.image}}" class="myImage"/>
+
+  	<table>
+	  <tr>
+	    <th>Meno</th>
+	    <td>{{site.title}}</td>
+	  </tr>
+	  <tr>
+	    <th>Vek</th>
+	    <td>{{page.age}}</td>
+	  </tr>
+	  <tr>
+	    <th>Bydlisko</th>
+	    <td>{{page.home}}</td>
+	  </tr>
+	  <tr>
+	    <th>Znamenie</th>
+	    <td>{{page.sign}}</td>
+	  </tr>
+	  <tr>
+	    <th>Obľúbená farba</th>
+	    <td>{{page.color}}</td>
+	  </tr>
+	</table>
+  </header>
+
+  <div class="post-content" style="float: left">
+    {{ content }}
+  </div>
+
+</article>

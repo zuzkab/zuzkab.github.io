@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<section>
+
+  <header>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p>{{page.description}}</p>
+  </header>
+
+  <div>
+    {% for task in site.data.tasks %}
+        {% if {{task.title}} == {{page.title}} %}
+          <h2>Všeobecné informácie</h2>
+          <p style="float:left">Termín odovzdania: <time>{{task.deadline}}</time>
+            {% if {{task.state}} == "done"%}
+               <p style="color: green">Odovzdané</p>
+            {% else if {{task.state}} == "process" %}
+                <p style="color: yellow;">V procese</p>
+            {% else %}
+                <p style="color: red;">Nesplnené</p>
+            {% endif %}
+          </p>
+          <p>Počet bodov: {{task.points}}</p>
+          <p>Požiadavky na vypracovanie:
+              <ul>
+                {% for reqs in task.requirement %}
+                <li style="float:left; width: 50%">
+                  <p>{{reqs}}</p> 
+                </li>
+                {% endfor %}
+              </ul>
+          </p>
+        {% endif %}
+    {% endfor %}
+  </div>
+
+  <hr>
+
+  <div>
+    <h2>Vypracovanie zadania</h2>
+    {{ content }}
+  </div>
+</section>
