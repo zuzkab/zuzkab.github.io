@@ -25,7 +25,7 @@ Medzi moje najobľúbenejšie letné festivaly patrí *Grape Festival*, ktorý j
 
 ## Aktuálne najobľúbenejšia pesnička
 
-{% youtube Ra2UQhJNrBY %}
+<!-- {% youtube Ra2UQhJNrBY %} -->
 
 ---
 
