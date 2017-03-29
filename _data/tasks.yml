@@ -5,10 +5,12 @@
   requirement: [ 5 podstránok, 3 rôzne rozloženia, 5 premenných, kolekcie alebo dátové súbory, 5 filtrov alebo tagov, 1 plugin ]
 
 - title: Zadanie 2
-  deadline:
-  points:
-  state:
-  requirement:
+  deadline: 26.3.2017 23:59
+  points: 6 
+  state: done
+  requirement: [štandardné členenie textu, zvýraznenie slov, zvýraznenie členenia textu odrážkami alebo číslovaním, odkazy na iné časti vlastného dokumentu, prípadne odkazy na URL,
+  poznámka pod čiarou, zoznam použitej literatúry a zdrojov vrátane ich citácie v texte, vloženie obrázku a tabuliek spolu s odkazmi v texte, zoznam obrázkov a tabuliek v úvode alebo závere textu,
+  vytvorenie registra pojmov (indexu) s pojmami hierarchicky usporiadanými do dvoch úrovni]
 
 - title: Zadanie 3
   deadline:
